@@ -1,3 +1,60 @@
-*{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bacasime+Antique&family=Fasthand&family=Montserrat:ital,wght@0,300;0,400;1,500&family=Poppins:ital,wght@0,800;1,800&family=Roboto&display=swap');
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --bg-green: linear-gradient(
+        90deg,
+        rgba(91, 61, 0, 1) 0%,
+        rgba(149, 93, 0, 1) 100%
+    );
+    --bg-brown: linear-gradient(
+        90deg,
+        rgba(4, 57, 46, 1) 0%,
+        rgba(0, 153, 102, 1) 100%
+    );
+    --bg-red:linear-gradient(90deg,rgb(39,0,0) 0%,rgb(149,0,0) 100%);
+    --bg-white:white;
+    --bg-model:#0e110eaf;
+    --text-white:white;
+    --text-dark:rgba(54,54,54);
+    --text-light:#c7c7c7;
+    --text-gold:rgba(255,217,0);
+    --border:0.2rem solid rgb(224,224,224);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-green);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 40rem;
+    width: 40rem;
+    gap:0.8rem;
+    background: var(--bg-white);
+}
+/* GRID */
+
+.grid__sqaure {
+    background-color: rgb(50, 49, 48);
+}
+h1{
+    margin: 0;
+    padding: 1.6rem;
+}
+h1:hover,h2:hover{
+    cursor:default;
 }
