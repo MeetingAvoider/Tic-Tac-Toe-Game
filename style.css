@@ -109,7 +109,78 @@ h2:hover {
   cursor: pointer;
 }
 /* instruction */
-.instruction{
+#instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+}
+#instructions__text {
   text-align: center;
-  width:15rem;
+  font-size: 1rem;
+  color: var(--text-white);
+}
+
+#instructions__btn {
+  cursor: pointer;
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  background: var(--dark);
+  border: var(--border);
+  color: var(--text-white);
+}
+
+#instructions__btn:active {
+  transform: translateY(0.125rem);
+}
+#modal {
+  display: none;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-modal);
+}
+
+#modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 40%;
+  border-radius: 5rem;
+  color: var(--text-white);
+  background: var(--bg-red);
+  border: var(--dark) solid 0.1rem;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: none;
+}
+
+input {
+  margin: 1.25rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 0.625rem 1.25rem;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+input[type="submit"]:active {
+  transform: translateY(0.125rem);
 }
