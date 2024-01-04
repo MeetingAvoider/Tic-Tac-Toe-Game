@@ -184,3 +184,24 @@ input {
 input[type="submit"]:active {
   transform: translateY(0.125rem);
 }
+
+@media (max-width: 1100px) {
+  #grid {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  #info__title {
+    margin: 0 0 1rem;
+  }
+  body {
+    align-content: center;
+  }
+  #modal__content {
+    text-align: center;
+    height: 60%;
+    width: 80%;
+  }
+  input {
+    width: 10rem;
+  }
+}
